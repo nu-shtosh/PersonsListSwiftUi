@@ -7,13 +7,13 @@ struct MainTabView: View {
         TabView{
             ContactListView(contacts: contacts)
                 .tabItem {
-                    Image(systemName: "person.crop.circle.fill")
+                    Image(systemName: "person.3.fill")
                     Text("Contacts")
                 }
             ContactListDetailView(contacts: contacts)
                 .tabItem {
-                    Image(systemName: "person.crop.square.fill")
-                    Text("Contacts Detail")
+                    Image(systemName: "phone.fill")
+                    Text("Numbers")
                 }
         }
     }

@@ -23,6 +23,7 @@ struct ContactDetailView: View {
             ContactCellView(text: contact.phone, image: .phone)
             ContactCellView(text: contact.email, image: .email)
         }
+        .listStyle(.grouped)
         .navigationTitle(contact.fullName)
     }
 }

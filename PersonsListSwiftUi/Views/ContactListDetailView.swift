@@ -6,18 +6,13 @@ struct ContactListDetailView: View {
     var body: some View {
         NavigationStack {
             List(contacts) { contact in
-//                Section(contact.fullName) {
-                    Text(contact.fullName)
-                        .bold()
-                        .foregroundColor(.gray)
-                        .padding(.top, 16)
+                Section(contact.fullName) {
                     ContactCellView(text: contact.phone, image: .phone)
                     ContactCellView(text: contact.email, image: .email)
                 }
-//            }
+            }
             .background(Color.white)
-            .listStyle(.grouped)
-            .navigationTitle("Contacts Detail")
+            .navigationTitle("Numbers")
         }
         .background(Color.white)
     }
