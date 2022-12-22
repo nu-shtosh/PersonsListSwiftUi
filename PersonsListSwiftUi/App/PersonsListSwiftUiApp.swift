@@ -11,7 +11,7 @@ import SwiftUI
 struct PersonsListSwiftUiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
